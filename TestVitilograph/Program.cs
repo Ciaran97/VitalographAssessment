@@ -58,11 +58,11 @@ namespace TestVitilograph
 
                 //Adds the key to the character and subtracts the 'A' character. 
                 //Get the division remainder and add 'A' back to the remainder value. 
-                int NewShifted = ((Character + Shift - A) % 26) + A;
+                int Shifted = ((Character + Shift - A) % 26) + A;
 
                 //Append shifted char to the string builder
                 //cast the int to a char
-                Output.Append((char)NewShifted);
+                Output.Append((char)Shifted);
 
 
             }
